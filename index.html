@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Countdown Timer</h1>
+
+    <div class="inputs">
+      <label for="date">Select Date:</label>
+      <input type="date" id="date">
+
+      <label for="time">Select Time:</label>
+      <input type="time" id="time">
+
+      <button id="startBtn">Start</button>
+    </div>
+
+    <div class="timer">
+      <div class="time-box"><span id="days">00</span><p>Days</p></div>
+      <div class="time-box"><span id="hours">00</span><p>Hours</p></div>
+      <div class="time-box"><span id="minutes">00</span><p>Minutes</p></div>
+      <div class="time-box"><span id="seconds">00</span><p>Seconds</p></div>
+    </div>
+
+    <p id="message"></p>
+  </div>
+
+  <!-- Hidden audio for ringing sound -->
+  <audio id="alarmSound" src="ring.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
